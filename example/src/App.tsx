@@ -1,18 +1,22 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-super-simple-chat';
+import { StyleSheet, View } from 'react-native';
+import { MessageBubble } from 'react-native-super-simple-chat';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  // generate an array of 10 messages in a human conversation. Each message is an object with a text property and a userID property.
+  const messages = [
+    { text: 'Hi', userID: 1 },
+    { text: 'Hi', userID: 2 },
+    { text: 'How are you?', userID: 1 },
+    { text: 'I am good, how are you?', userID: 2 },
+    { text: 'Not bad', userID: 1 },
+  ];
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      {messages.map((msg) => (
+        <MessageBubble text={msg.text} isSender={msg.userID === 1} />
+      ))}
     </View>
   );
 }

@@ -41,7 +41,7 @@
     "android"
   ],
   "repository": "https://github.com/jackbridger/react-native-super-simple-chat",
-  "author": "Jack Bridger <jacksbridger@gmail.com> (https://github.com/jackbridger)",
+  "author": "Jack Bridger <jack@bitreach.io> (https://github.com/jackbridger)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jackbridger/react-native-super-simple-chat/issues"
@@ -150,5 +150,6 @@
       "module",
       "typescript"
     ]
-  }
+  },
+  "dependencies": {}
 }

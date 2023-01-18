@@ -1,6 +1,6 @@
 {
   "name": "react-native-super-simple-chat",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A super simple chat UI SDK based, inspired by Material UI",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
